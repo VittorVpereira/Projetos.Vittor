@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HTML, Banco de Dados e Mobile</title>
+<meta name="description" content="Pesquisa sobre como HTML, bancos de dados e apps mobile se integram. Exemplos: iFood, Nubank, Uber, Spotify.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="#">HTML, Banco de Dados e Mobile</a>
+<button id="nav-toggle" aria-label="Abrir menu">☰</button>
+
+<nav id="nav" class="nav">
+<a href="#intro">Introdução</a>
+<a href="#html-web">HTML / Front-end</a>
+<a href="#database">Banco de Dados</a>
+<a href="#mobile">Mobile</a>
+<a href="#integration">Integração</a>
+<a href="#examples">Exemplos</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- ===================== INTRODUÇÃO ===================== -->
+<section id="intro" class="hero">
+<div class="container hero-grid">
+
+<div class="hero-text">
+<h1>Como HTML, Bancos de Dados e Apps Mobile Trabalham Juntos</h1>
+<p>Guia didático e visual mostrando como front-end, servidores e bancos de dados se conectam em sistemas reais como iFood, Uber e Nubank.</p>
+<a class="btn" href="#integration">Ver Integração Completa</a>
+</div>
+
+<div class="hero-card">
+<ul class="card-list">
+<li><strong>Projeto:</strong> HTML, Banco de Dados e Mobile — Pesquisa</li>
+<li><strong>Tecnologias:</strong> HTML, CSS, JavaScript, REST, SQL/NoSQL</li>
+<li><strong>Exemplos:</strong> iFood, Uber, Nubank</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ===================== HTML / FRONT-END ===================== -->
+<section id="html-web" class="section">
+<div class="container">
+<h2>O que é HTML e como funciona no Front-end</h2>
+<p>HTML é a linguagem que estrutura uma página web. No front-end, ele trabalha junto com CSS (estilos) e JavaScript (interações) para construir interfaces usadas em sites e até em apps mobile via WebView.</p>
+
+<div class="cards">
+<article class="card">
+<h3>HTML Semântico</h3>
+<p>Usa tags como &lt;header&gt;, &lt;section&gt;, &lt;nav&gt; e &lt;footer&gt; para melhorar organização e acessibilidade.</p>
+</article>
+
+<article class="card">
+<h3>CSS Responsivo</h3>
+<p>Layouts flexíveis e Grid permitem que o site funcione bem em telas pequenas ou grandes.</p>
+</article>
+
+<article class="card">
+<h3>JavaScript</h3>
+<p>Controla interações, animações, botões e comunicação com APIs.</p>
+</article>
+</div>
+
+</div>
+</section>
+
+<!-- ===================== BANCO DE DADOS ===================== -->
+<section id="database" class="section alt">
+<div class="container">
+<h2>O que é um Banco de Dados e por que ele é importante</h2>
+<p>Bancos de dados armazenam informações que apps e sites precisam para funcionar. Podem ser SQL (MySQL, PostgreSQL) ou NoSQL (MongoDB, Firebase).</p>
+
+<div class="split">
+
+<ul class="flow-list">
+<li>Armazenam usuários, pedidos, pagamentos e localização</li>
+<li>Garantem segurança das informações</li>
+<li>Permitem buscas rápidas</li>
+<li>São acessados por APIs/servidores</li>
+</ul>
+
+<article class="card">
+<h3>Por que é essencial?</h3>
+<p>Sem um banco de dados, apps como iFood, Uber e Nubank não poderiam salvar dados nem mostrar informações personalizadas para cada usuário.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- ===================== MOBILE ===================== -->
+<section id="mobile" class="section">
+<div class="container">
+<h2>O que são Aplicativos Mobile e como se comunicam com Servidores</h2>
+
+<p>Aplicativos mobile são programas instalados em celulares. Eles não armazenam tudo no dispositivo: quase sempre precisam conversar com servidores através de APIs.</p>
+
+<div class="cards">
+<article class="card">
+<h3>API / REST</h3>
+<p>É a ponte entre o app e o servidor. Ex.: /login, /pedido, /buscar-lojas.</p>
+</article>
+
+<article class="card">
+<h3>Conexão com o Banco</h3>
+<p>O app não acessa o banco diretamente. É sempre através de uma API.</p>
+</article>
+
+<article class="card">
+<h3>Apps Híbridos</h3>
+<p>Podem usar HTML/CSS/JS dentro de WebViews (ex.: iFood e Nubank usam partes híbridas).</p>
+</article>
+</div>
+
+</div>
+</section>
+
+<!-- ===================== INTEGRAÇÃO ===================== -->
+<section id="integration" class="section alt">
+<div class="container">
+<h2>Como HTML, Banco de Dados e Mobile se Integram</h2>
+
+<p>Os três trabalham juntos seguindo um fluxo de comunicação entre usuário, front-end, servidor e banco de dados.</p>
+
+<div class="diagram">
+<div class="node">Usuário</div>
+<div class="arrow">➡️</div>
+<div class="node">Front-end (HTML/CSS/JS)</div>
+<div class="arrow">➡️</div>
+<div class="node">API / Servidor</div>
+<div class="arrow">➡️</div>
+<div class="node">Banco de Dados</div>
+</div>
+
+<p class="note">O servidor é o responsável por enviar e receber dados do banco e repassar para o app ou site.</p>
+</div>
+</section>
+
+<!-- ===================== EXEMPLOS ===================== -->
+<section id="examples" class="section">
+<div class="container">
+<h2>Exemplos de Sistemas Reais</h2>
+
+<!-- EXEMPLO 1 -->
+<div class="example">
+<h3>📌 iFood — Fluxo Completo</h3>
+<p>O usuário faz um pedido no app → o front-end envia os dados para o servidor → o servidor grava no banco de dados → o restaurante recebe o pedido → o entregador recebe a rota.</p>
+<p class="small">Tecnologias comuns: React Native, APIs REST, PostgreSQL, Redis.</p>
+</div>
+
+<!-- EXEMPLO 2 -->
+<div class="example">
+<h3>📌 Nubank — Integração Mobile + Banco de Dados</h3>
+<p>O app do Nubank exibe saldo, transações e limite consultando APIs seguras. O banco de dados guarda todas as operações e o app só exibe o que o servidor libera.</p>
+<p class="small">Tecnologias comuns: Kotlin/Swift, sistemas distribuídos, bancos NoSQL.</p>
+</div>
+
+<!-- EXEMPLO 3 -->
+<div class="example">
+<h3>📌 Uber — Geolocalização + APIs + Banco de Dados</h3>
+<p>O app envia localização → o servidor encontra motoristas próximos → consulta o banco de dados → devolve o motorista disponível ao usuário.</p>
+<p class="small">Tecnologias: GPS, APIs de rota, bancos escaláveis.</p>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<p>HTML, Banco de Dados e Mobile - entrega de técnico do gabriel</p>
+<p>Desenvolvido por Vittor</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
